@@ -1,0 +1,26 @@
+.header-top {
+	padding-block: 17px;
+	font-size: 12px;
+	color: #fff;
+	background-color: var(--bg-secondary);
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+	}
+	a {
+		color: currentColor;
+	}
+}
+
+.header-top__list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.header-top__item {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}

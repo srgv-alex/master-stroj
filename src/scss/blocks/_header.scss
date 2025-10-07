@@ -1,0 +1,8 @@
+.header {
+}
+
+.header__nav {
+	@include tablet {
+		display: none;
+	}
+}
