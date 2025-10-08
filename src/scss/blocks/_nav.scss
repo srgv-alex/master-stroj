@@ -1,11 +1,19 @@
 .header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&-link {
+		color: var(--text-color);
+	}
 }
 .nav {
-	font-size: 18px;
+	font-size: 12px;
+	font-weight: 700;
 }
 .nav__list {
 	display: flex;
-	column-gap: 30px;
+	align-items: center;
+	column-gap: 49px;
 }
 .active {
 }

@@ -1,5 +1,5 @@
 .header-top {
-	padding-block: 17px;
+	padding-block: 15px;
 	font-size: 12px;
 	color: #fff;
 	background-color: var(--bg-secondary);
@@ -10,17 +10,31 @@
 	}
 	a {
 		color: currentColor;
+		transition: color 0.2s ease-in;
+		&:hover {
+			color: var(--accent);
+		}
 	}
 }
 
 .header-top__list {
 	display: flex;
 	align-items: center;
-	gap: 40px;
+	gap: 46px;
 }
 
 .header-top__item {
+	position: relative;
 	display: flex;
 	align-items: center;
 	gap: 20px;
+}
+
+.border::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	right: -28px;
+	height: 100%;
+	background-color: #fff;
 }
