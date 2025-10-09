@@ -1,3 +1,13 @@
 .header-down {
 	padding: 12px;
 }
+
+@include m767() {
+	.nav__list {
+		column-gap: 19px;
+	}
+
+	.logo {
+		display: none;
+	}
+}

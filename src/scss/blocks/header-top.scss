@@ -38,3 +38,38 @@
 	height: 100%;
 	background-color: #fff;
 }
+
+@media (max-width: 1100px) {
+	.header-top__wrap {
+		justify-content: space-between;
+	}
+	.header-top__item-wrap + a {
+		display: none;
+	}
+}
+
+@media (max-width: 930px) {
+	.header-top__item-time {
+		display: none;
+	}
+}
+
+@include m767() {
+	.btn-call {
+		padding: 15px 30px;
+	}
+}
+
+@media (max-width: 690px) {
+	.header-top {
+		font-size: 8px;
+	}
+	.header-top__item {
+		gap: 7px;
+	}
+
+	.btn-call {
+		font-size: 10px;
+		padding: 15px 20px;
+	}
+}

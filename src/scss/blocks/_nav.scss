@@ -15,5 +15,25 @@
 	align-items: center;
 	column-gap: 49px;
 }
-.active {
+
+@media (max-width: 1040px) {
+	.nav__list {
+		column-gap: 25px;
+	}
+}
+
+@media (max-width: 930px) {
+	.logo {
+		display: none;
+	}
+	.header__nav {
+		font-size: 11px;
+		justify-content: space-between;
+	}
+}
+
+@include m767() {
+	.header__nav {
+		display: none;
+	}
 }
