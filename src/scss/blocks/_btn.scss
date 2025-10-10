@@ -4,6 +4,11 @@
 	color: var(--page-bg);
 	background-color: var(--accent);
 	border-radius: 30px;
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+		background-color: #f16b1d;
+	}
 }
 
 .btn-call {

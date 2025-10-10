@@ -3,6 +3,10 @@
 }
 
 @include m767() {
+	.header-down {
+		padding: 0;
+	}
+
 	.nav__list {
 		column-gap: 19px;
 	}

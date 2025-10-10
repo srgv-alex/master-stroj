@@ -1,0 +1,33 @@
+.catalog {
+	&__title {
+		margin-bottom: 56px;
+		text-align: center;
+	}
+
+	&-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 62px 30px;
+		margin-bottom: 72px;
+	}
+
+	&-btn {
+		display: inline-block;
+		padding: 20px 62px;
+	}
+}
+
+.catalog__btn {
+	text-align: center;
+}
+
+@include m1024() {
+	.catalog-grid {
+		gap: 30px 30px;
+		margin-bottom: 50px;
+	}
+
+	.catalog__title {
+		margin-bottom: 35px;
+	}
+}

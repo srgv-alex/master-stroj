@@ -15,6 +15,16 @@
 	overflow: hidden;
 }
 
+.section {
+	padding-block: 120px;
+}
+
+@include m1024() {
+	.section {
+		padding-block: 50px;
+	}
+}
+
 .no-scroll {
 	overflow-y: hidden;
 }

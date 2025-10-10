@@ -1,0 +1,13 @@
+<section class="catalog section">
+	<div class="container">
+		<div class="catalog__title">
+			<h2 class="h-2">Каталог продукции</h2>
+		</div>
+		<div class="catalog-grid">
+			@@loop("./../components/product-card.html", "./../data/catalog-product.json")
+		</div>
+		<div class="catalog__btn">
+			<a class="btn catalog-btn" href="#!">Больше товаров</a>
+		</div>
+	</div>
+</section>

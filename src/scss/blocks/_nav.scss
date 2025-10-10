@@ -6,6 +6,13 @@
 		color: var(--text-color);
 	}
 }
+.header__nav-link {
+	transition: color 0.2s ease-in;
+}
+
+.header__nav-link:hover {
+	color: var(--accent);
+}
 .nav {
 	font-size: 12px;
 	font-weight: 700;
