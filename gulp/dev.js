@@ -20,12 +20,9 @@ const imageminWebp = require('imagemin-webp');
 const rename = require('gulp-rename');
 const prettier = require('@bdchauvette/gulp-prettier');
 
-
-gulp.task('clean:dev', function (done) {
+gulp.task('clean:dev', function(done) {
 	if (fs.existsSync('./build/')) {
-		return gulp
-			.src('./build/', { read: false })
-			.pipe(clean({ force: true }));
+		return gulp.src('./build/', { read: false }).pipe(clean({ force: true }));
 	}
 	done();
 });
@@ -35,7 +32,7 @@ const fileIncludeSetting = {
 	basepath: '@file',
 };
 
-const plumberNotify = (title) => {
+const plumberNotify = title => {
 	return {
 		errorHandler: notify.onError({
 			title: title,
@@ -45,7 +42,7 @@ const plumberNotify = (title) => {
 	};
 };
 
-gulp.task('html:dev', function () {
+gulp.task('html:dev', function() {
 	return gulp
 		.src([
 			'./src/html/**/*.html',
@@ -92,7 +89,7 @@ gulp.task('html:dev', function () {
 		.pipe(gulp.dest('./build/'));
 });
 
-gulp.task('sass:dev', function () {
+gulp.task('sass:dev', function() {
 	return gulp
 		.src('./src/scss/*.scss')
 		.pipe(changed('./build/css/'))
@@ -110,7 +107,7 @@ gulp.task('sass:dev', function () {
 		.pipe(gulp.dest('./build/css/'));
 });
 
-gulp.task('images:dev', function () {
+gulp.task('images:dev', function() {
 	return (
 		gulp
 			.src(['./src/img/**/*', '!./src/img/svgicons/**/*'])
@@ -173,15 +170,15 @@ const svgSymbol = {
 	},
 };
 
-gulp.task('svgStack:dev', function () {
+gulp.task('svgStack:dev', function() {
 	return gulp
 		.src('./src/img/svgicons/**/*.svg')
 		.pipe(plumber(plumberNotify('SVG:dev')))
 		.pipe(svgsprite(svgStack))
-		.pipe(gulp.dest('./build/img/svgsprite/'))
+		.pipe(gulp.dest('./build/img/svgsprite/'));
 });
 
-gulp.task('svgSymbol:dev', function () {
+gulp.task('svgSymbol:dev', function() {
 	return gulp
 		.src('./src/img/svgicons/**/*.svg')
 		.pipe(plumber(plumberNotify('SVG:dev')))
@@ -189,21 +186,23 @@ gulp.task('svgSymbol:dev', function () {
 		.pipe(gulp.dest('./build/img/svgsprite/'));
 });
 
-gulp.task('files:dev', function () {
+gulp.task('files:dev', function() {
 	return gulp
 		.src('./src/files/**/*')
 		.pipe(changed('./build/files/'))
 		.pipe(gulp.dest('./build/files/'));
 });
 
-gulp.task('js:dev', function () {
-	return gulp
-		.src('./src/js/*.js')
-		.pipe(changed('./build/js/'))
-		.pipe(plumber(plumberNotify('JS')))
-		// .pipe(babel())
-		.pipe(webpack(require('./../webpack.config.js')))
-		.pipe(gulp.dest('./build/js/'));
+gulp.task('js:dev', function() {
+	return (
+		gulp
+			.src('./src/js/*.js')
+			.pipe(changed('./build/js/'))
+			.pipe(plumber(plumberNotify('JS')))
+			// .pipe(babel())
+			.pipe(webpack(require('./../webpack.config.js')))
+			.pipe(gulp.dest('./build/js/'))
+	);
 });
 
 const serverOptions = {
@@ -211,11 +210,11 @@ const serverOptions = {
 	open: true,
 };
 
-gulp.task('server:dev', function () {
+gulp.task('server:dev', function() {
 	return gulp.src('./build/').pipe(server(serverOptions));
 });
 
-gulp.task('watch:dev', function () {
+gulp.task('watch:dev', function() {
 	gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass:dev'));
 	gulp.watch(
 		['./src/html/**/*.html', './src/html/**/*.json'],

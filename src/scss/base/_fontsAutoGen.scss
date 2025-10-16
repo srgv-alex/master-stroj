@@ -1,8 +1,8 @@
 @font-face {
 	font-family: Montserrat;
 	font-display: swap;
-	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-	font-weight: 400;
+	src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
@@ -13,16 +13,16 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: Roboto_Condensed;
+	font-family: Montserrat;
 	font-display: swap;
-	src: url("../fonts/Roboto_Condensed-Bold.woff2") format("woff2"), url("../fonts/Roboto_Condensed-Bold.woff") format("woff");
-	font-weight: 700;
+	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
-	font-family: Montserrat;
+	font-family: Roboto_Condensed;
 	font-display: swap;
-	src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+	src: url("../fonts/Roboto_Condensed-Bold.woff2") format("woff2"), url("../fonts/Roboto_Condensed-Bold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
