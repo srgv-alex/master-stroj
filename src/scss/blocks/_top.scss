@@ -1,10 +1,26 @@
-.top-products {
-}
-
 .top-products__header {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 80px;
 }
 
 .top-products__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 17px 30px;
+}
+
+@media (max-width: 991px) {
+	.top-products__grid {
+		grid-template-columns: 1fr;
+	}
+	.top-products__header {
+		margin-bottom: 45px;
+	}
+}
+
+@media (max-width: 480px) {
+	.top-products__header {
+		margin-bottom: 30px;
+	}
 }

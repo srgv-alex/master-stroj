@@ -1,0 +1,42 @@
+.manufacture {
+	background-color: var(--bg-secondary);
+}
+
+.manufacture__header h2 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+	color: var(--page-bg);
+}
+
+.manufacture__wrap {
+	display: flex;
+	align-items: center;
+	column-gap: 32px;
+}
+.manufacture-content {
+	max-width: 325px;
+}
+.manufacture-content__logo {
+	display: inline-block;
+	padding: 0 38px;
+	border-radius: 30px;
+	background-color: var(--page-bg);
+	margin-bottom: 53px;
+}
+.manufacture-description {
+	display: flex;
+	flex-direction: column;
+	row-gap: 53px;
+	color: var(--page-bg);
+}
+
+.manufacture-video {
+	width: 687px;
+	height: 387px;
+}
+
+.manufacture-video iframe {
+	width: 100%;
+	height: 100%;
+}

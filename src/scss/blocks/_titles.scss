@@ -13,10 +13,9 @@
 	color: var(--page-bg);
 }
 .h-3 {
-	margin: 1em 0 0.5em;
-	font-size: 26px;
+	font-size: 14px;
 	font-weight: 700;
-	font-family: var(--font-titles);
+	font-family: var(--text-color);
 }
 
 .h-4 {
@@ -28,10 +27,4 @@
 
 .white {
 	color: var(--page-bg);
-}
-
-@include m767() {
-	.h-1 {
-		font-size: 30px;
-	}
 }

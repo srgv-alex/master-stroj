@@ -19,12 +19,16 @@
 	padding-block: 120px;
 }
 
-@include m1024() {
+@media (max-width: 991px) {
 	.section {
 		padding-block: 50px;
 	}
 }
-
+@media (max-width: 480px) {
+	.section {
+		padding-block: 35px;
+	}
+}
 .no-scroll {
 	overflow-y: hidden;
 }

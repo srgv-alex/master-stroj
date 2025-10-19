@@ -34,9 +34,6 @@
 	}
 }
 
-@include m425() {
-}
-
 @mixin m375() {
 	@media (max-width: 375px) {
 		@content;

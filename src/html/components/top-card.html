@@ -1,30 +1,27 @@
 <article class='top-card'>
-	<div class="top-card__img">
-		<img src="./../../img/top-catalog/top-@@img.png" alt="шестигранник">
-	</div>
-	<div class="top-card__info">
-		<h3 class='top-card__title'>
-			@@title
-		</h3>
-		<ul class="top-card__details">
-			<li>@@size</li>
-			<li>@@quantity</li>
-			<li>@@availability</li>
-		</ul>
-		<div class="top-card__colors">
-			@@loop('./colors.html', './../data/colors.json')
+	<div class="top-card__wrap">
+		<div class="top-card__img">
+			<img src="./../../img/top-catalog/top-@@img.png" alt="шестигранник">
+		</div>
+		<div class="top-card__info">
+			<h3 class='top-card__title h-3'>
+				@@title
+			</h3>
+			<ul class="top-card__details">
+				<li>@@size</li>
+				<li>@@quantity</li>
+				<li>@@availability</li>
+			</ul>
+			<div class="top-card__colors">
+				@@loop('./colors.html', './../data/colors.json')
+			</div>
 		</div>
 	</div>
-	<div class="top-card__price">
-		<ul>
-			<li><b>Серый</b>470 руб кв/м</li>
-			<li><b>Красный</b>530 руб кв/м</li>
-			<li><b>Коричневый</b>590 руб кв/м</li>
-			<li><b>Желтый</b>по запросу</li>
-			<li><b>Другие цвета</b>510 руб кв/м</li>
-		</ul>
-		<botton class="top-card__btn">
 
-		</botton>
+	<div class="top-card__price">
+		@@loop("./price.html", './../data/price.json')
+		<button type="button" class="top-card__btn">
+			<img src="./../../img/icon/btn-add.svg" alt="иконка добавить">
+		</button>
 	</div>
 </article>
