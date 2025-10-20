@@ -1,0 +1,20 @@
+.advantages {
+	background-color: var(--bg-secondary);
+}
+
+.advantages__wrap {
+	display: flex;
+	flex-direction: column;
+	row-gap: 80px;
+}
+.advantages__header h2 {
+	display: flex;
+	justify-content: center;
+	color: var(--page-bg);
+}
+
+.advantages__items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px 30px;
+}
