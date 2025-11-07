@@ -1,7 +1,30 @@
 <footer class="footer">
 	<div class="container">
+		<div class="footer__wrap">
+			<div class="footer-store">
+				<h4 class="h-4">Магазин</h4>
+				<p class="footer__text">Персональный раздел</p>
+				<div class="footer__time">
+					<img src="./../../img/icon/clock.svg" alt="иконка часы">
+					<p>Режим работы: с 8:00 до 20:00</p>
+				</div>
+				<div class="footer__phone">
+					<img src="./../../img/icon/phone.svg" alt="иконка телефонной трубки">
+					<div>
+						<a class='footer__link' href="tel:+79261059414">+7 (926) 105-94-14</a>
+						<a class='footer__link' href="tel:+79104706797">+7 (910) 470-67-97</a>
+						<a class='footer__link' href="tel:+74999949099">+7 (499) 994-90-99</a>
+					</div>
+				</div>
+			</div>
+			<nav class="footer-nav">
+				@@loop("./../components/footer-nav.html", "./../data/footer-nav.json")
+			</nav>
+		</div>
 		<div class="footer__copyright">
-
+			<p>
+				&copy; 2022 ООО &quot; Мастер строй &quot;
+			</p>
 		</div>
 	</div>
 </footer>

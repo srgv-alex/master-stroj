@@ -9,6 +9,10 @@
 	&:hover {
 		background-color: #f16b1d;
 	}
+	&--wide {
+		width: 100%;
+		padding: 15px 20px;
+	}
 }
 
 .btn-call {
@@ -24,4 +28,7 @@
 
 .btn-call:hover {
 	opacity: 0.8;
+}
+
+.btn-modal {
 }

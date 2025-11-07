@@ -15,6 +15,27 @@
 
 .advantages__items {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	gap: 50px 30px;
+}
+
+@include m767() {
+	.advantages__wrap {
+		row-gap: 45px;
+	}
+	.advantages__items {
+		gap: 25px;
+	}
+}
+
+@media (max-width: 435px) {
+	.advantages__header h2 {
+		font-size: 28px;
+	}
+}
+@include m360() {
+	.advantages__wrap {
+		row-gap: 35px;
+	}
 }

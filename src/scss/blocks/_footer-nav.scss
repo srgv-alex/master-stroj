@@ -1,0 +1,18 @@
+.footer-nav__wrap {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.footer__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+.footer__link {
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: var(--accent);
+	}
+}
