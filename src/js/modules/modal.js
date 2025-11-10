@@ -26,10 +26,9 @@ function modal() {
 
 	document.addEventListener('keydown', function(event) {
 		if (event.code == 'Escape') {
-			modal.classList.remove('modal--open');
-			document.body.classList.remove('no-scroll');
+			closeModal();
 		}
 	});
 }
 
-export default modal();
+export default modal;

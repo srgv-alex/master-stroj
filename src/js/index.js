@@ -6,3 +6,6 @@ mobileNav();
 
 import modal from './modules/modal.js';
 modal();
+
+import scrollTop from './modules/scroll-top.js';
+scrollTop();
